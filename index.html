@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Smokey Coffee | Artisan Café & Roastery</title>
+   <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/924/924514.png">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <style>
+    * { font-family: 'Inter', system-ui, sans-serif; }
+    body { background: #fefaf5; }
+    .nav-link { transition: all 0.2s ease; position: relative; }
+    .nav-link.active { font-weight: 600; color: #c47a2e; }
+    .nav-link.active::after { content: ''; position: absolute; bottom: -6px; left: 0; width: 100%; height: 2.5px; background: #c47a2e; border-radius: 4px; }
+    .hover-scale { transition: transform 0.25s ease, box-shadow 0.3s ease; }
+    .hover-scale:hover { transform: translateY(-5px); box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.12); }
+    .card-img { transition: transform 0.5s ease; }
+    .group:hover .card-img { transform: scale(1.03); }
+    .hero-bg { background: linear-gradient(105deg, rgba(0,0,0,0.55), rgba(0,0,0,0.25)), url('https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1600'); background-size: cover; background-position: center 30%; }
+    .footer a { transition: color 0.2s; }
+    .footer a:hover { color: #c47a2e; }
+  </style>
+</head>
+<body>
+
+  
+  <nav class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-amber-100">
+    <div class="max-w-7xl mx-auto px-5 md:px-8 py-4">
+      <div class="flex flex-col items-center gap-2">
+        <a href="index.html" class="text-2xl font-bold tracking-tight text-amber-800">
+          <i class="fas fa-mug-hot text-amber-700 mr-1"></i> SMOKEY
+        </a>
+        <div class="flex justify-center gap-6 md:gap-10 flex-wrap text-gray-700 font-medium">
+          <a href="index.html" class="nav-link active"><i class="fas fa-home mr-1"></i> Home</a>
+          <a href="menu.html" class="nav-link"><i class="fas fa-utensils mr-1"></i> Menu</a>
+          <a href="about.html" class="nav-link"><i class="fas fa-leaf mr-1"></i> Our Story</a>
+          <a href="contact.html" class="nav-link"><i class="fas fa-envelope mr-1"></i> Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="hero-bg h-[70vh] md:h-[85vh] flex items-center justify-center text-center px-4">
+    <div class="max-w-3xl text-white">
+      <p class="text-amber-200 uppercase tracking-wider text-sm md:text-base font-semibold">
+        <i class="fas fa-star-of-life text-amber-300 text-xs"></i> Since 2012 <i class="fas fa-star-of-life text-amber-300 text-xs"></i>
+      </p>
+      <h1 class="text-5xl md:text-7xl font-bold mt-3 leading-tight">The Smokey <span class="text-amber-300">COFFEE</span></h1>
+      <p class="text-lg md:text-xl mt-5 max-w-xl mx-auto text-white/90">Discover the Essence of Exquisite Coffee Beans. Each bean is meticulously sourced from the finest coffee-growing regions.</p>
+      <div class="flex flex-wrap gap-4 justify-center mt-8">
+        <a href="menu.html" class="bg-amber-700 hover:bg-amber-800 text-white px-8 py-3 rounded-full font-semibold transition shadow-lg"><i class="fas fa-shopping-bag mr-2"></i> Shop Beans</a>
+        <a href="about.html" class="bg-white/20 backdrop-blur-sm border border-white/40 hover:bg-white/30 px-8 py-3 rounded-full font-semibold transition"><i class="fas fa-coffee mr-2"></i> Our Coffee</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="bg-amber-900 text-white py-3 text-center text-sm md:text-base flex flex-wrap justify-center gap-6 md:gap-10 font-medium">
+    <span><i class="fas fa-tag text-amber-300 mr-2"></i> Get 10% Off Your First Order</span>
+    <span><i class="fas fa-truck text-amber-300 mr-2"></i> Free Delivery in The UK</span>
+    <span><i class="fas fa-heart text-amber-300 mr-2"></i> Taste For Everyone</span>
+  </div>
+
+  <section class="max-w-7xl mx-auto px-5 py-16">
+    <div class="text-center mb-12">
+      <i class="fas fa-globe-americas text-amber-600 text-4xl mb-3"></i>
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-800">From World's Finest Regions</h2>
+      <div class="w-24 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+      <p class="text-gray-600 mt-4 max-w-2xl mx-auto">We travel across three continents to bring you exceptional single-origin beans</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-2xl overflow-hidden shadow-md hover-scale text-center p-6"><i class="fas fa-mountain text-amber-700 text-4xl mb-3"></i><h3 class="text-xl font-bold">Ethiopia Yirgacheffe</h3><p class="text-gray-600 mt-2">Floral jasmine, bergamot & honey sweetness — light roast perfection.</p><span class="inline-block mt-3 text-amber-700 text-sm font-semibold">Limited Batch</span></div>
+      <div class="bg-white rounded-2xl overflow-hidden shadow-md hover-scale text-center p-6"><i class="fas fa-tree text-amber-700 text-4xl mb-3"></i><h3 class="text-xl font-bold">Colombia Supremo</h3><p class="text-gray-600 mt-2">Caramel, red apple & toasted nuts — medium roast, velvety body.</p><span class="inline-block mt-3 text-amber-700 text-sm font-semibold">Best Seller</span></div>
+      <div class="bg-white rounded-2xl overflow-hidden shadow-md hover-scale text-center p-6"><i class="fas fa-volcano text-amber-700 text-4xl mb-3"></i><h3 class="text-xl font-bold">Sumatra Mandheling</h3><p class="text-gray-600 mt-2">Earthy, dark chocolate & cedar — full-bodied, low acidity.</p><span class="inline-block mt-3 text-amber-700 text-sm font-semibold">Dark Roast</span></div>
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto px-5 py-10">
+    <div class="text-center mb-12">
+      <i class="fas fa-fire-flame-curved text-amber-600 text-4xl mb-3"></i>
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-800">Tang-Tastic Coffee</h2>
+      <div class="w-24 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+      <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Bold, vibrant & full of character — our signature collection</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="bg-white rounded-2xl overflow-hidden shadow-md hover-scale group"><img class="card-img w-full h-56 object-cover" src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Vanilla Croissant"><div class="p-5"><h3 class="text-xl font-bold"><i class="fas fa-ice-cream text-amber-600 mr-1"></i> Vanilla Croissant</h3><p class="text-gray-500 text-sm">Madagascar vanilla glaze</p><p class="text-amber-700 font-semibold text-lg mt-1">£10.00</p><button class="mt-3 w-full bg-amber-50 hover:bg-amber-100 text-amber-800 py-2 rounded-full border border-amber-200 transition"><i class="fas fa-cart-plus mr-2"></i> Add to Bag</button></div></div>
+      <div class="bg-white rounded-2xl overflow-hidden shadow-md hover-scale group"><img class="card-img w-full h-56 object-cover" src="https://images.pexels.com/photos/5703971/pexels-photo-5703971.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pistachio Croissant"><div class="p-5"><h3 class="text-xl font-bold"><i class="fas fa-seedling text-amber-600 mr-1"></i> Croissant Pistachio</h3><p class="text-gray-500 text-sm">Sicilian pistachio cream</p><p class="text-amber-700 font-semibold text-lg mt-1">£10.00</p><button class="mt-3 w-full bg-amber-50 hover:bg-amber-100 text-amber-800 py-2 rounded-full border border-amber-200 transition"><i class="fas fa-cart-plus mr-2"></i> Add to Bag</button></div></div>
+      <div class="bg-white rounded-2xl overflow-hidden shadow-md hover-scale group"><img class="card-img w-full h-56 object-cover" src="https://images.pexels.com/photos/427031/pexels-photo-427031.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Chocolate Croissant"><div class="p-5"><h3 class="text-xl font-bold"><i class="fas fa-candy-cane text-amber-600 mr-1"></i> Croissant Chocolate</h3><p class="text-gray-500 text-sm">Dark chocolate batons</p><p class="text-amber-700 font-semibold text-lg mt-1">£10.00</p><button class="mt-3 w-full bg-amber-50 hover:bg-amber-100 text-amber-800 py-2 rounded-full border border-amber-200 transition"><i class="fas fa-cart-plus mr-2"></i> Add to Bag</button></div></div>
+      <div class="bg-white rounded-2xl overflow-hidden shadow-md hover-scale group"><img class="card-img w-full h-56 object-cover" src="https://images.pexels.com/photos/4607548/pexels-photo-4607548.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Strawberry Croissant"><div class="p-5"><h3 class="text-xl font-bold"><i class="fas fa-strawberry text-amber-600 mr-1"></i> Croissant Strawberry</h3><p class="text-gray-500 text-sm">Fresh strawberry compote</p><p class="text-amber-700 font-semibold text-lg mt-1">£10.00</p><button class="mt-3 w-full bg-amber-50 hover:bg-amber-100 text-amber-800 py-2 rounded-full border border-amber-200 transition"><i class="fas fa-cart-plus mr-2"></i> Add to Bag</button></div></div>
+    </div>
+  </section>
+
+  <section class="bg-amber-50/50 py-16">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="text-center mb-10">
+        <i class="fas fa-mug-saucer text-amber-700 text-4xl mb-2"></i>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800">To Go With Coffee</h2>
+        <p class="text-gray-600 mt-2">Perfect pairings for your daily brew — freshly baked every morning</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition"><img class="w-16 h-16 rounded-full object-cover" src="https://images.pexels.com/photos/5703971/pexels-photo-5703971.jpeg?auto=compress&cs=tinysrgb&w=200"><div><h4 class="font-bold"><i class="fas fa-ice-cream text-amber-600 mr-1"></i> Vanilla Croissant</h4><p class="text-amber-700">£10.00</p></div></div>
+        <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition"><img class="w-16 h-16 rounded-full object-cover" src="https://images.pexels.com/photos/427031/pexels-photo-427031.jpeg?auto=compress&cs=tinysrgb&w=200"><div><h4 class="font-bold"><i class="fas fa-seedling text-amber-600 mr-1"></i> Pistachio Croissant</h4><p class="text-amber-700">£10.00</p></div></div>
+        <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition"><img class="w-16 h-16 rounded-full object-cover" src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=200"><div><h4 class="font-bold"><i class="fas fa-candy-cane text-amber-600 mr-1"></i> Chocolate Croissant</h4><p class="text-amber-700">£10.00</p></div></div>
+        <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition"><img class="w-16 h-16 rounded-full object-cover" src="https://images.pexels.com/photos/4607548/pexels-photo-4607548.jpeg?auto=compress&cs=tinysrgb&w=200"><div><h4 class="font-bold"><i class="fas fa-strawberry text-amber-600 mr-1"></i> Strawberry Croissant</h4><p class="text-amber-700">£10.00</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto px-5 py-16">
+    <div class="text-center mb-12">
+      <i class="fas fa-star text-amber-500 text-3xl"></i><i class="fas fa-star text-amber-500 text-3xl"></i><i class="fas fa-star text-amber-500 text-3xl"></i><i class="fas fa-star text-amber-500 text-3xl"></i><i class="fas fa-star text-amber-500 text-3xl"></i>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-3">Loved by Coffee Lovers</h2>
+      <div class="w-20 h-0.5 bg-amber-400 mx-auto mt-3"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-2xl shadow-md"><i class="fas fa-quote-left text-amber-300 text-3xl mb-3"></i><p class="text-gray-700 italic">"The best flat white in London! Their Ethiopian beans are pure magic. Pastries are always fresh."</p><div class="mt-4 flex items-center gap-3"><i class="fas fa-user-circle text-2xl text-amber-600"></i><div><p class="font-bold">Sophia Chen</p><div class="text-amber-400 text-sm"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></div></div></div>
+      <div class="bg-white p-6 rounded-2xl shadow-md"><i class="fas fa-quote-left text-amber-300 text-3xl mb-3"></i><p class="text-gray-700 italic">"Ordered the Tang-Tastic bundle — incredible aroma and flavour. Will definitely repurchase."</p><div class="mt-4 flex items-center gap-3"><i class="fas fa-user-circle text-2xl text-amber-600"></i><div><p class="font-bold">James O'Connor</p><div class="text-amber-400 text-sm"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></div></div></div>
+      <div class="bg-white p-6 rounded-2xl shadow-md"><i class="fas fa-quote-left text-amber-300 text-3xl mb-3"></i><p class="text-gray-700 italic">"The croissant pistachio is life-changing. Plus free UK delivery — absolute gem of a café."</p><div class="mt-4 flex items-center gap-3"><i class="fas fa-user-circle text-2xl text-amber-600"></i><div><p class="font-bold">Priya Kapoor</p><div class="text-amber-400 text-sm"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div></div></div></div>
+    </div>
+  </section>
+
+  <section class="bg-amber-800 text-white py-16">
+    <div class="max-w-7xl mx-auto px-5 text-center">
+      <i class="fas fa-mortar-pestle text-4xl mb-3"></i>
+      <h2 class="text-3xl md:text-4xl font-bold">Master Your Brew at Home</h2>
+      <p class="mt-2 text-amber-200 max-w-xl mx-auto">Pro tips from our head roaster to elevate your daily cup</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 text-left">
+        <div class="bg-amber-700/30 p-5 rounded-xl backdrop-blur-sm"><i class="fas fa-tachometer-alt text-2xl mb-2"></i><h3 class="font-bold text-xl">Grind Fresh</h3><p class="text-amber-100 text-sm">Always grind beans just before brewing to preserve volatile oils and aroma.</p></div>
+        <div class="bg-amber-700/30 p-5 rounded-xl backdrop-blur-sm"><i class="fas fa-temperature-high text-2xl mb-2"></i><h3 class="font-bold text-xl">Water Temp Matters</h3><p class="text-amber-100 text-sm">Aim for 92-96°C — too hot burns, too cold under-extracts.</p></div>
+        <div class="bg-amber-700/30 p-5 rounded-xl backdrop-blur-sm"><i class="fas fa-weight-hanging text-2xl mb-2"></i><h3 class="font-bold text-xl">Perfect Ratio</h3><p class="text-amber-100 text-sm">Start with 1:16 coffee to water, then adjust to taste.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-gray-300 py-10 footer">
+    <div class="max-w-7xl mx-auto px-5 text-center">
+      <i class="fas fa-mug-hot text-amber-400 text-3xl mb-2"></i>
+      <p class="text-2xl font-bold text-amber-400">Smokey Coffee</p>
+      <p class="mt-2 text-sm">© 2025 — Artisan roasts & fresh pastries</p>
+      <div class="flex justify-center gap-6 mt-4 text-sm">
+        <a href="index.html" class="hover:text-amber-400"><i class="fas fa-home mr-1"></i> Home</a>
+        <a href="menu.html" class="hover:text-amber-400"><i class="fas fa-utensils mr-1"></i> Menu</a>
+        <a href="about.html" class="hover:text-amber-400"><i class="fas fa-leaf mr-1"></i> About</a>
+        <a href="contact.html" class="hover:text-amber-400"><i class="fas fa-envelope mr-1"></i> Contact</a>
+      </div>
+      <div class="flex justify-center gap-5 mt-5 text-amber-400">
+        <i class="fab fa-instagram hover:text-white transition cursor-pointer text-xl"></i>
+        <i class="fab fa-twitter hover:text-white transition cursor-pointer text-xl"></i>
+        <i class="fab fa-facebook-f hover:text-white transition cursor-pointer text-xl"></i>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
