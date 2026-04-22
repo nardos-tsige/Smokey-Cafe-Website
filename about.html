@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Story | Smokey Coffee - Artisan Roastery Since 2012</title>
+   <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/924/924514.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background: #fefaf5; }
+    .nav-link { transition: 0.2s; }
+    .nav-link.active { font-weight: 600; color: #c47a2e; }
+    .hero-about { background: linear-gradient(115deg, rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1600'); background-size: cover; background-position: center; }
+    .stat-card:hover { transform: translateY(-5px); transition: all 0.2s ease; }
+  </style>
+</head>
+<body>
+  <nav class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b">
+    <div class="max-w-6xl mx-auto px-5 py-4">
+      <div class="flex flex-col items-center gap-2">
+        <a href="index.html" class="text-2xl font-bold text-amber-800"><i class="fas fa-mug-hot text-amber-700 mr-1"></i> SMOKEY</a>
+        <div class="flex justify-center gap-6 md:gap-10 flex-wrap">
+          <a href="index.html" class="nav-link"><i class="fas fa-home mr-1"></i> Home</a>
+          <a href="menu.html" class="nav-link"><i class="fas fa-utensils mr-1"></i> Menu</a>
+          <a href="about.html" class="nav-link active"><i class="fas fa-leaf mr-1"></i> Our Story</a>
+          <a href="contact.html" class="nav-link"><i class="fas fa-envelope mr-1"></i> Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-about h-96 flex items-center justify-center">
+    <div class="text-center text-white px-4">
+      <i class="fas fa-seedling text-5xl mb-3"></i>
+      <h1 class="text-5xl md:text-6xl font-bold">The Smokey Legacy</h1>
+      <p class="text-xl mt-2 max-w-2xl mx-auto">Craftsmanship, sustainability & the perfect cup</p>
+    </div>
+  </section>
+
+  <div class="max-w-6xl mx-auto px-5 py-20">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div><img src="https://images.pexels.com/photos/324028/pexels-photo-324028.jpeg?auto=compress&cs=tinysrgb&w=800" class="rounded-2xl shadow-xl" alt="coffee beans"></div>
+      <div>
+        <i class="fas fa-quote-right text-amber-300 text-4xl mb-2"></i>
+        <h2 class="text-3xl font-bold">Meticulously Sourced, Ethically Traded</h2>
+        <p class="text-gray-600 mt-4 leading-relaxed">We travel to the highlands of Ethiopia, Colombia, and Sumatra to bring you single-origin beans that tell a story. Each batch is small-roasted in London to unlock vibrant notes of chocolate, berries, and caramel.</p>
+        <p class="mt-4 text-gray-600"><i class="fas fa-hand-holding-heart text-amber-600 mr-2"></i> From bean to cup — we believe in ethical trade, bold flavour, and the warmth of a perfect brew. We partner directly with family-owned farms, ensuring fair wages and sustainable practices.</p>
+        <div class="mt-6 flex gap-4"><span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm"><i class="fas fa-trophy mr-1"></i> Direct Trade</span><span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm"><i class="fas fa-leaf mr-1"></i> Organic Practices</span><span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm"><i class="fas fa-recycle mr-1"></i> Carbon Neutral</span></div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20 text-center">
+      <div class="bg-white p-6 rounded-2xl shadow-sm stat-card"><i class="fas fa-calendar-alt text-amber-600 text-3xl mb-2"></i><p class="text-3xl font-bold text-gray-800">2012</p><p class="text-gray-500">Founded in London</p></div>
+      <div class="bg-white p-6 rounded-2xl shadow-sm stat-card"><i class="fas fa-tractor text-amber-600 text-3xl mb-2"></i><p class="text-3xl font-bold text-gray-800">15+</p><p class="text-gray-500">Partner Farms</p></div>
+      <div class="bg-white p-6 rounded-2xl shadow-sm stat-card"><i class="fas fa-mug-hot text-amber-600 text-3xl mb-2"></i><p class="text-3xl font-bold text-gray-800">250k+</p><p class="text-gray-500">Cups Served</p></div>
+      <div class="bg-white p-6 rounded-2xl shadow-sm stat-card"><i class="fas fa-star text-amber-600 text-3xl mb-2"></i><p class="text-3xl font-bold text-gray-800">4.9★</p><p class="text-gray-500">Customer Rating</p></div>
+    </div>
+
+    <div class="mt-24">
+      <div class="text-center mb-12"><i class="fas fa-users text-amber-600 text-4xl mb-2"></i><h2 class="text-3xl font-bold">Meet Our Head Roasters</h2><div class="w-20 h-0.5 bg-amber-400 mx-auto mt-3"></div><p class="text-gray-600 mt-3">The passionate people behind every batch</p></div>
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="flex flex-col md:flex-row gap-5 bg-white p-5 rounded-2xl shadow-md"><img src="https://images.pexels.com/photos/4349727/pexels-photo-4349727.jpeg?auto=compress&cs=tinysrgb&w=400" class="w-32 h-32 rounded-full object-cover mx-auto md:mx-0"><div><h3 class="text-xl font-bold">Elena Vasquez <span class="text-amber-600 text-sm">Head Roaster</span></h3><p class="text-gray-600 mt-1">15 years of experience, Q-Grader certified. Elena oversees all our single-origin profiles and ensures every roast hits the perfect curve.</p><div class="flex gap-2 mt-2 text-amber-600"><i class="fab fa-instagram"></i><i class="fab fa-linkedin-in"></i></div></div></div>
+        <div class="flex flex-col md:flex-row gap-5 bg-white p-5 rounded-2xl shadow-md"><img src="https://images.pexels.com/photos/4349741/pexels-photo-4349741.jpeg?auto=compress&cs=tinysrgb&w=400" class="w-32 h-32 rounded-full object-cover mx-auto md:mx-0"><div><h3 class="text-xl font-bold">Marcus Chen <span class="text-amber-600 text-sm">Green Coffee Buyer</span></h3><p class="text-gray-600 mt-1">Marcus travels to origin twice a year, building relationships with farmers and discovering microlots that shine in the cup.</p><div class="flex gap-2 mt-2 text-amber-600"><i class="fab fa-instagram"></i><i class="fab fa-twitter"></i></div></div></div>
+      </div>
+    </div>
+
+    <div class="mt-20 bg-amber-50 rounded-3xl p-8 md:p-12">
+      <div class="grid md:grid-cols-2 gap-8 items-center"><div><i class="fas fa-seedling text-amber-700 text-4xl mb-3"></i><h2 class="text-2xl font-bold">Our Sustainability Promise</h2><p class="text-gray-700 mt-3">We've committed to becoming carbon neutral by 2026. Our roastery runs on renewable energy, and all packaging is 100% compostable or recyclable. For every bag sold, we plant one tree in coffee-growing regions.</p><div class="mt-4 flex gap-3"><i class="fas fa-box text-amber-700 text-2xl"></i><i class="fas fa-solar-panel text-amber-700 text-2xl"></i><i class="fas fa-tree text-amber-700 text-2xl"></i></div></div><div><img src="https://images.pexels.com/photos/7319300/pexels-photo-7319300.jpeg?auto=compress&cs=tinysrgb&w=600" class="rounded-xl shadow-lg" alt="sustainability"></div></div>
+    </div>
+
+    <div class="mt-20 text-center bg-white p-10 rounded-3xl shadow-sm border border-amber-100">
+      <i class="fas fa-quote-left text-amber-500 text-4xl opacity-50 mb-3"></i>
+      <p class="italic text-2xl font-light text-gray-700 max-w-3xl mx-auto">"Discover the Essence of Exquisite Coffee Beans — because every cup should tell a story of place, people, and passion."</p>
+      <p class="mt-4 font-semibold text-amber-800"><i class="fas fa-certificate text-amber-600 mr-1"></i> — The Smokey Team</p>
+      <div class="mt-6 flex justify-center gap-2"><span class="h-2 w-2 bg-amber-500 rounded-full"></span><span class="h-2 w-2 bg-amber-300 rounded-full"></span><span class="h-2 w-2 bg-amber-500 rounded-full"></span></div>
+    </div>
+  </div>
+
+  <div class="bg-amber-800 text-white py-12">
+    <div class="max-w-4xl mx-auto px-5 text-center"><i class="fas fa-envelope-open-text text-4xl mb-3"></i><h3 class="text-2xl font-bold">Join the Smokey Circle</h3><p class="mb-4">Get 10% off your first order + exclusive brewing tips & early access to new arrivals.</p><div class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"><input type="email" placeholder="Your email address" class="px-4 py-2 rounded-full text-gray-800 w-full"><button class="bg-amber-600 hover:bg-amber-500 px-6 py-2 rounded-full font-semibold transition"><i class="fab fa-telegram-plane mr-1"></i> Subscribe</button></div></div>
+  </div>
+
+  <footer class="bg-gray-900 text-gray-300 py-8 text-center">
+    <i class="fas fa-mug-hot text-amber-400 mr-1"></i> <span>© 2025 Smokey Coffee — Crafted with passion from London to the world</span>
+    <div class="flex justify-center gap-5 mt-3 text-amber-400">
+      <i class="fab fa-instagram hover:text-white transition cursor-pointer"></i>
+      <i class="fab fa-x-twitter hover:text-white transition cursor-pointer"></i>
+      <i class="fab fa-facebook-f hover:text-white transition cursor-pointer"></i>
+    </div>
+  </footer>
+</body>
+</html>

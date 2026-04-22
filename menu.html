@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Smokey Coffee - Artisan Pastries & Coffee</title>
+   <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/924/924514.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { font-family: 'Inter', sans-serif; }
+    .nav-link { transition: 0.2s; position: relative; }
+    .nav-link.active { font-weight: 600; color: #c47a2e; }
+    .nav-link.active::after { content: ''; position: absolute; bottom: -6px; left: 0; width: 100%; height: 2px; background: #c47a2e; }
+    .hero-bg-menu { background: linear-gradient(105deg, rgba(0,0,0,0.55), rgba(0,0,0,0.3)), url('https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1600'); background-size: cover; background-position: center; }
+    .menu-card:hover { transform: translateY(-4px); transition: all 0.2s ease; }
+    .category-badge { background: #fef3e8; }
+  </style>
+</head>
+<body class="bg-[#fefaf5]">
+
+  <nav class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-amber-100">
+    <div class="max-w-6xl mx-auto px-5 py-4">
+      <div class="flex flex-col items-center gap-2">
+        <a href="index.html" class="text-2xl font-bold text-amber-800"><i class="fas fa-mug-hot text-amber-700 mr-1"></i> SMOKEY</a>
+        <div class="flex justify-center gap-6 md:gap-10 flex-wrap text-gray-700 font-medium">
+          <a href="index.html" class="nav-link"><i class="fas fa-home mr-1"></i> Home</a>
+          <a href="menu.html" class="nav-link active"><i class="fas fa-utensils mr-1"></i> Menu</a>
+          <a href="about.html" class="nav-link"><i class="fas fa-leaf mr-1"></i> Our Story</a>
+          <a href="contact.html" class="nav-link"><i class="fas fa-envelope mr-1"></i> Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-bg-menu h-72 flex items-center justify-center">
+    <div class="text-center text-white">
+      <i class="fas fa-coffee text-5xl mb-3"></i>
+      <h1 class="text-5xl font-bold drop-shadow">Our Menu</h1>
+      <p class="text-lg mt-2">Freshly baked daily • Specialty coffee • Seasonal specials</p>
+    </div>
+  </section>
+
+  <div class="sticky top-16 z-40 bg-white/80 backdrop-blur-sm border-b border-amber-100 py-3">
+    <div class="max-w-6xl mx-auto px-5 flex flex-wrap justify-center gap-4 text-sm font-medium">
+      <a href="#coffee" class="px-4 py-2 rounded-full bg-amber-100 text-amber-800 hover:bg-amber-200 transition"><i class="fas fa-mug-hot mr-1"></i> Coffee</a>
+      <a href="#pastries" class="px-4 py-2 rounded-full bg-amber-50 text-gray-700 hover:bg-amber-100 transition"><i class="fas fa-bread-slice mr-1"></i> Pastries</a>
+      <a href="#savory" class="px-4 py-2 rounded-full bg-amber-50 text-gray-700 hover:bg-amber-100 transition"><i class="fas fa-cheese mr-1"></i> Savory</a>
+      <a href="#drinks" class="px-4 py-2 rounded-full bg-amber-50 text-gray-700 hover:bg-amber-100 transition"><i class="fas fa-wine-bottle mr-1"></i> Cold Drinks</a>
+      <a href="#seasonal" class="px-4 py-2 rounded-full bg-amber-50 text-gray-700 hover:bg-amber-100 transition"><i class="fas fa-leaf mr-1"></i> Seasonal</a>
+    </div>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-5 py-12">
+
+    <div id="coffee" class="scroll-mt-28 mb-16">
+      <div class="flex items-center gap-3 mb-8">
+        <i class="fas fa-fire-flame-curved text-amber-600 text-3xl"></i>
+        <h2 class="text-3xl font-bold text-gray-800">Tang-Tastic Coffee</h2>
+        <span class="bg-amber-100 text-amber-700 text-xs px-2 py-1 rounded-full">Signature Collection</span>
+      </div>
+      <p class="text-gray-600 mb-6">Bold, vibrant & full of character — our signature espresso-based creations</p>
+      <div class="grid md:grid-cols-2 gap-5">
+        <div class="flex justify-between items-center border-b border-amber-200 pb-4 menu-card"><div><h3 class="text-xl font-semibold"><i class="fas fa-fire text-amber-600 mr-2"></i> Tang-Tastic Espresso</h3><p class="text-gray-500 text-sm">Double shot with citrus & dark chocolate notes</p></div><span class="text-amber-800 font-bold text-xl">£3.80</span></div>
+        <div class="flex justify-between items-center border-b border-amber-200 pb-4 menu-card"><div><h3 class="text-xl font-semibold"><i class="fas fa-mug-hot text-amber-600 mr-2"></i> Tang-Tastic Flat White</h3><p class="text-gray-500 text-sm">Velvety microfoam, intense flavour</p></div><span class="text-amber-800 font-bold text-xl">£4.20</span></div>
+        <div class="flex justify-between items-center border-b border-amber-200 pb-4 menu-card"><div><h3 class="text-xl font-semibold"><i class="fas fa-snowflake text-amber-600 mr-2"></i> Iced Tang-Tastic</h3><p class="text-gray-500 text-sm">Chilled, shaken with orange zest</p></div><span class="text-amber-800 font-bold text-xl">£4.50</span></div>
+        <div class="flex justify-between items-center border-b border-amber-200 pb-4 menu-card"><div><h3 class="text-xl font-semibold"><i class="fas fa-moon text-amber-600 mr-2"></i> Tang-Tastic Affogato</h3><p class="text-gray-500 text-sm">Espresso poured over vanilla gelato</p></div><span class="text-amber-800 font-bold text-xl">£5.50</span></div>
+      </div>
+    </div>
+
+    <div id="pastries" class="scroll-mt-28 mb-16">
+      <div class="flex items-center gap-3 mb-8">
+        <i class="fas fa-bread-slice text-amber-600 text-3xl"></i>
+        <h2 class="text-3xl font-bold text-gray-800">Artisan Pastries</h2>
+        <span class="bg-amber-100 text-amber-700 text-xs px-2 py-1 rounded-full">Baked Fresh Daily</span>
+      </div>
+      <p class="text-gray-600 mb-6">Buttery, flaky, and made with love — perfect with any coffee</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md menu-card"><img class="w-full h-48 object-cover" src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Vanilla Croissant"><div class="p-4"><div class="flex justify-between items-start"><div><h3 class="font-bold text-lg">Vanilla Croissant</h3><p class="text-gray-500 text-sm">Madagascar vanilla glaze</p></div><span class="text-amber-700 font-bold">£10.00</span></div></div></div>
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md menu-card"><img class="w-full h-48 object-cover" src="https://images.pexels.com/photos/5703971/pexels-photo-5703971.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pistachio Croissant"><div class="p-4"><div class="flex justify-between items-start"><div><h3 class="font-bold text-lg">Pistachio Croissant</h3><p class="text-gray-500 text-sm">Sicilian pistachio cream</p></div><span class="text-amber-700 font-bold">£10.00</span></div></div></div>
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md menu-card"><img class="w-full h-48 object-cover" src="https://images.pexels.com/photos/427031/pexels-photo-427031.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Chocolate Croissant"><div class="p-4"><div class="flex justify-between items-start"><div><h3 class="font-bold text-lg">Chocolate Croissant</h3><p class="text-gray-500 text-sm">Dark chocolate batons</p></div><span class="text-amber-700 font-bold">£10.00</span></div></div></div>
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md menu-card"><img class="w-full h-48 object-cover" src="https://images.pexels.com/photos/4607548/pexels-photo-4607548.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Strawberry Croissant"><div class="p-4"><div class="flex justify-between items-start"><div><h3 class="font-bold text-lg">Strawberry Croissant</h3><p class="text-gray-500 text-sm">Fresh strawberry compote</p></div><span class="text-amber-700 font-bold">£10.00</span></div></div></div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md menu-card"><img class="w-full h-48 object-cover" src="https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Almond Croissant"><div class="p-4"><div class="flex justify-between items-start"><div><h3 class="font-bold text-lg">Almond Croissant</h3><p class="text-gray-500 text-sm">Toasted almonds & frangipane</p></div><span class="text-amber-700 font-bold">£11.00</span></div></div></div>
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md menu-card"><img class="w-full h-48 object-cover" src="https://images.pexels.com/photos/1055272/pexels-photo-1055272.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Cinnamon Roll"><div class="p-4"><div class="flex justify-between items-start"><div><h3 class="font-bold text-lg">Cinnamon Roll</h3><p class="text-gray-500 text-sm">Cream cheese glaze</p></div><span class="text-amber-700 font-bold">£9.50</span></div></div></div>
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md menu-card"><img class="w-full h-48 object-cover" src="https://images.pexels.com/photos/585750/pexels-photo-585750.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pain au Chocolat"><div class="p-4"><div class="flex justify-between items-start"><div><h3 class="font-bold text-lg">Pain au Chocolat</h3><p class="text-gray-500 text-sm">Two dark chocolate sticks</p></div><span class="text-amber-700 font-bold">£10.50</span></div></div></div>
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md menu-card"><img class="w-full h-48 object-cover" src="https://images.pexels.com/photos/6249298/pexels-photo-6249298.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Raspberry Danish"><div class="p-4"><div class="flex justify-between items-start"><div><h3 class="font-bold text-lg">Raspberry Danish</h3><p class="text-gray-500 text-sm">Fresh raspberries & custard</p></div><span class="text-amber-700 font-bold">£9.80</span></div></div></div>
+      </div>
+    </div>
+
+    <div id="savory" class="scroll-mt-28 mb-16">
+      <div class="flex items-center gap-3 mb-8">
+        <i class="fas fa-cheese text-amber-600 text-3xl"></i>
+        <h2 class="text-3xl font-bold text-gray-800">Savory Bites</h2>
+        <span class="bg-amber-100 text-amber-700 text-xs px-2 py-1 rounded-full">Great for lunch</span>
+      </div>
+      <div class="grid md:grid-cols-2 gap-5">
+        <div class="flex justify-between items-center border-b border-amber-200 pb-4 menu-card"><div><h3 class="text-xl font-semibold"><i class="fas fa-bacon text-amber-600 mr-2"></i> Ham & Cheese Croissant</h3><p class="text-gray-500 text-sm">French ham, comté cheese, béchamel</p></div><span class="text-amber-800 font-bold text-xl">£11.50</span></div>
+        <div class="flex justify-between items-center border-b border-amber-200 pb-4 menu-card"><div><h3 class="text-xl font-semibold"><i class="fas fa-seedling text-amber-600 mr-2"></i> Spinach & Feta Roll</h3><p class="text-gray-500 text-sm">Flaky pastry, creamy feta, fresh spinach</p></div><span class="text-amber-800 font-bold text-xl">£10.50</span></div>
+        <div class="flex justify-between items-center border-b border-amber-200 pb-4 menu-card"><div><h3 class="text-xl font-semibold"><i class="fas fa-mushroom text-amber-600 mr-2"></i> Mushroom & Truffle Tart</h3><p class="text-gray-500 text-sm">Wild mushrooms, truffle oil, puff pastry</p></div><span class="text-amber-800 font-bold text-xl">£12.00</span></div>
+        <div class="flex justify-between items-center border-b border-amber-200 pb-4 menu-card"><div><h3 class="text-xl font-semibold"><i class="fas fa-egg text-amber-600 mr-2"></i> Breakfast Bap</h3><p class="text-gray-500 text-sm">Free-range egg, sausage, bacon, ketchup</p></div><span class="text-amber-800 font-bold text-xl">£9.50</span></div>
+      </div>
+    </div>
+
+    <div id="drinks" class="scroll-mt-28 mb-16">
+      <div class="flex items-center gap-3 mb-8">
+        <i class="fas fa-wine-bottle text-amber-600 text-3xl"></i>
+        <h2 class="text-3xl font-bold text-gray-800">Cold Drinks</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-5">
+        <div class="flex justify-between items-center border-b border-amber-200 pb-4 menu-card"><div><h3 class="text-xl font-semibold"><i class="fas fa-mug-saucer text-amber-600 mr-2"></i> Iced Latte</h3><p class="text-gray-500 text-sm">Smooth espresso, cold milk, ice</p></div><span class="text-amber-800 font-bold text-xl">£4.50</span></div>
+        <div class="flex justify-between items-center border-b border-amber-200 pb-4 menu-card"><div><h3 class="text-xl font-semibold"><i class="fas fa-lemon text-amber-600 mr-2"></i> Cold Brew</h3><p class="text-gray-500 text-sm">Steeped 16 hours, naturally sweet</p></div><span class="text-amber-800 font-bold text-xl">£4.80</span></div>
+        <div class="flex justify-between items-center border-b border-amber-200 pb-4 menu-card"><div><h3 class="text-xl font-semibold"><i class="fas fa-cookie-bite text-amber-600 mr-2"></i> Iced Matcha Latte</h3><p class="text-gray-500 text-sm">Ceremonial matcha, oat milk</p></div><span class="text-amber-800 font-bold text-xl">£5.00</span></div>
+        <div class="flex justify-between items-center border-b border-amber-200 pb-4 menu-card"><div><h3 class="text-xl font-semibold"><i class="fas fa-apple-alt text-amber-600 mr-2"></i> Sparkling Lemonade</h3><p class="text-gray-500 text-sm">Fresh lemon, mint, soda</p></div><span class="text-amber-800 font-bold text-xl">£4.00</span></div>
+      </div>
+    </div>
+    <div id="seasonal" class="scroll-mt-28 mb-16">
+      <div class="flex items-center gap-3 mb-8">
+        <i class="fas fa-leaf text-amber-600 text-3xl"></i>
+        <h2 class="text-3xl font-bold text-gray-800">Seasonal Specials</h2>
+        <span class="bg-green-100 text-green-700 text-xs px-2 py-1 rounded-full">Limited Time</span>
+      </div>
+      <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-6">
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="text-center"><i class="fas fa-pumpkin text-amber-600 text-3xl mb-2"></i><h3 class="font-bold">Pumpkin Spice Latte</h3><p class="text-gray-600 text-sm">With real pumpkin, cinnamon, nutmeg</p><span class="text-amber-700 font-bold block mt-1">£5.20</span></div>
+          <div class="text-center"><i class="fas fa-cookie text-amber-600 text-3xl mb-2"></i><h3 class="font-bold">Gingerbread Latte</h3><p class="text-gray-600 text-sm">Molasses, ginger, topped with cookie crumb</p><span class="text-amber-700 font-bold block mt-1">£5.20</span></div>
+          <div class="text-center"><i class="fas fa-snowman text-amber-600 text-3xl mb-2"></i><h3 class="font-bold">Peppermint Mocha</h3><p class="text-gray-600 text-sm">Dark chocolate, peppermint, whipped cream</p><span class="text-amber-700 font-bold block mt-1">£5.50</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-12 bg-amber-800 text-white p-6 rounded-2xl text-center">
+      <i class="fas fa-ticket-alt text-3xl mb-2"></i>
+      <p class="text-lg font-semibold">Weekly Special: Buy any coffee + pastry = £2 off</p>
+      <p class="text-amber-200 text-sm">Valid Monday-Friday until 11am</p>
+    </div>
+  </div>
+  <footer class="bg-gray-900 text-gray-300 py-8 text-center">
+    <i class="fas fa-mug-hot text-amber-400 mr-1"></i>
+    <p>© 2025 Smokey Coffee — Freshly roasted daily</p>
+    <div class="flex justify-center gap-5 mt-3 text-amber-400">
+      <i class="fab fa-instagram hover:text-white transition cursor-pointer"></i>
+      <i class="fab fa-x-twitter hover:text-white transition cursor-pointer"></i>
+      <i class="fab fa-facebook-f hover:text-white transition cursor-pointer"></i>
+    </div>
+  </footer>
+</body>
+</html>

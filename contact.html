@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Smokey Coffee - Visit Us or Get in Touch</title>
+   <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/924/924514.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background: #fefaf5; }
+    .nav-link { transition: 0.2s; }
+    .nav-link.active { font-weight: 600; color: #c47a2e; }
+    .contact-card:hover { transform: translateY(-5px); transition: all 0.2s ease; }
+  </style>
+</head>
+<body>
+
+  <nav class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b">
+    <div class="max-w-6xl mx-auto px-5 py-4">
+      <div class="flex flex-col items-center gap-2">
+        <a href="index.html" class="text-2xl font-bold text-amber-800"><i class="fas fa-mug-hot text-amber-700 mr-1"></i> SMOKEY</a>
+        <div class="flex justify-center gap-6 md:gap-10 flex-wrap">
+          <a href="index.html" class="nav-link"><i class="fas fa-home mr-1"></i> Home</a>
+          <a href="menu.html" class="nav-link"><i class="fas fa-utensils mr-1"></i> Menu</a>
+          <a href="about.html" class="nav-link"><i class="fas fa-leaf mr-1"></i> Our Story</a>
+          <a href="contact.html" class="nav-link active"><i class="fas fa-envelope mr-1"></i> Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="bg-gradient-to-r from-amber-800 to-amber-700 text-white py-20 text-center">
+    <i class="fas fa-phone-alt text-5xl mb-3"></i>
+    <h1 class="text-5xl font-bold">Get in Touch</h1>
+    <p class="text-lg mt-2 max-w-xl mx-auto"><i class="fas fa-heart mr-1"></i> We'd love to hear from you — whether it's a question, feedback, or just saying hello <i class="fas fa-heart ml-1"></i></p>
+  </section>
+
+  <div class="max-w-6xl mx-auto px-5 py-16">
+    <div class="grid md:grid-cols-2 gap-12">
+      
+      <div>
+        <div class="bg-white rounded-2xl shadow-md p-6 contact-card">
+          <h2 class="text-2xl font-bold border-l-4 border-amber-500 pl-3"><i class="fas fa-location-dot text-amber-700 mr-2"></i> Visit Our Café</h2>
+          <div class="mt-6 space-y-4 text-gray-700">
+            <p><i class="fas fa-map-marker-alt text-amber-600 w-7"></i> 42 Shoreditch High Street, London, E1 6JE</p>
+            <p><i class="fas fa-phone text-amber-600 w-7"></i> +44 20 7946 0138</p>
+            <p><i class="fas fa-envelope text-amber-600 w-7"></i> hello@smokeycoffee.uk</p>
+            <p><i class="fas fa-clock text-amber-600 w-7"></i> Mon - Fri: 8am – 6pm<br><span class="ml-7">Sat - Sun: 9am – 5pm</span></p>
+          </div>
+        </div>
+
+        <div class="mt-6 rounded-2xl overflow-hidden shadow-md h-64">
+          <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1x2483.4523!2d-0.0786!3d51.5259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cb2b1f4b1a7%3A0x2b5c8f5a6e9c3d4!2sShoreditch%20High%20St%2C%20London!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="mt-6 bg-amber-50 p-5 rounded-2xl border border-amber-200">
+          <div class="flex items-center gap-3 mb-3">
+            <i class="fas fa-truck-fast text-amber-700 text-2xl"></i>
+            <h3 class="font-bold text-lg">Delivery & Takeaway</h3>
+          </div>
+          <p class="text-gray-700 text-sm">Free UK delivery on orders over £20 • Click & Collect available (15min prep)</p>
+          <div class="flex gap-3 mt-3"><span class="bg-white px-3 py-1 rounded-full text-xs shadow-sm"><i class="fab fa-uber eats mr-1"></i> Uber Eats</span><span class="bg-white px-3 py-1 rounded-full text-xs shadow-sm"><i class="fas fa-motorcycle mr-1"></i> Deliveroo</span><span class="bg-white px-3 py-1 rounded-full text-xs shadow-sm"><i class="fas fa-box mr-1"></i> Just Eat</span></div>
+        </div>
+
+        <div class="mt-6 bg-white rounded-2xl shadow-md p-6">
+          <h3 class="font-bold text-xl mb-4"><i class="fas fa-question-circle text-amber-600 mr-2"></i> Frequently Asked</h3>
+          <div class="space-y-3">
+            <details class="group"><summary class="cursor-pointer font-medium text-gray-800 hover:text-amber-700"><i class="fas fa-coffee mr-2 text-amber-500"></i> Do you offer vegan options?</summary><p class="text-gray-600 text-sm mt-2 pl-6">Yes! We have oat/soy/almond milk and vegan croissant (chocolate & plain).</p></details>
+            <details class="group"><summary class="cursor-pointer font-medium text-gray-800 hover:text-amber-700"><i class="fas fa-calendar-alt mr-2 text-amber-500"></i> Can I book a table?</summary><p class="text-gray-600 text-sm mt-2 pl-6">Walk-ins only, but we have plenty of space. For groups of 6+, email us in advance.</p></details>
+            <details class="group"><summary class="cursor-pointer font-medium text-gray-800 hover:text-amber-700"><i class="fas fa-gift mr-2 text-amber-500"></i> Do you sell gift cards?</summary><p class="text-gray-600 text-sm mt-2 pl-6">Yes! Available online or in-store from £10 to £100.</p></details>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <form class="bg-white p-8 rounded-2xl shadow-md">
+          <h3 class="text-2xl font-bold mb-4"><i class="fas fa-paper-plane text-amber-600 mr-2"></i> Send us a message</h3>
+          <p class="text-gray-500 text-sm mb-6">We'll get back to you within 24 hours</p>
+          
+          <div class="relative mb-5">
+            <i class="fas fa-user absolute left-3 top-4 text-gray-400"></i>
+            <input type="text" placeholder="Your full name" class="w-full border border-gray-300 rounded-lg py-3 pl-10 pr-3 focus:ring-2 focus:ring-amber-400 focus:border-amber-400 outline-none">
+          </div>
+          
+          <div class="relative mb-5">
+            <i class="fas fa-envelope absolute left-3 top-4 text-gray-400"></i>
+            <input type="email" placeholder="Email address" class="w-full border border-gray-300 rounded-lg py-3 pl-10 pr-3 focus:ring-2 focus:ring-amber-400 outline-none">
+          </div>
+          
+          <div class="relative mb-5">
+            <i class="fas fa-phone absolute left-3 top-4 text-gray-400"></i>
+            <input type="tel" placeholder="Phone number (optional)" class="w-full border border-gray-300 rounded-lg py-3 pl-10 pr-3 focus:ring-2 focus:ring-amber-400 outline-none">
+          </div>
+          
+          <div class="relative mb-5">
+            <i class="fas fa-tag absolute left-3 top-4 text-gray-400"></i>
+            <select class="w-full border border-gray-300 rounded-lg py-3 pl-10 pr-3 appearance-none focus:ring-2 focus:ring-amber-400 outline-none bg-white">
+              <option>General enquiry</option>
+              <option>Wholesale / Partnership</option>
+              <option>Feedback</option>
+              <option>Catering request</option>
+            </select>
+            <i class="fas fa-chevron-down absolute right-3 top-4 text-gray-400"></i>
+          </div>
+          
+          <div class="relative mb-6">
+            <i class="fas fa-comment absolute left-3 top-4 text-gray-400"></i>
+            <textarea rows="5" placeholder="Your message..." class="w-full border border-gray-300 rounded-lg py-3 pl-10 pr-3 focus:ring-2 focus:ring-amber-400 outline-none"></textarea>
+          </div>
+          
+          <button class="bg-amber-700 hover:bg-amber-800 text-white w-full py-3 rounded-lg font-semibold transition"><i class="fas fa-paper-plane mr-2"></i> Send Message</button>
+          <p class="text-center text-gray-400 text-xs mt-4"><i class="fas fa-lock mr-1"></i> Your data is safe with us</p>
+        </form>
+
+        <div class="mt-6 bg-amber-50 rounded-2xl p-6 text-center">
+          <p class="font-semibold mb-3">Follow our coffee journey</p>
+          <div class="flex justify-center gap-6 text-2xl text-amber-700">
+            <a href="#" class="hover:scale-110 transition"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:scale-110 transition"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="hover:scale-110 transition"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="hover:scale-110 transition"><i class="fab fa-tiktok"></i></a>
+          </div>
+          <p class="text-xs text-gray-500 mt-3">@smokeycoffee • #SmokeyMoments</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-16 bg-amber-800 text-white rounded-2xl p-8 text-center">
+      <i class="fas fa-briefcase text-4xl mb-3"></i>
+      <h3 class="text-2xl font-bold">Join the Smokey Team</h3>
+      <p class="mt-2 max-w-md mx-auto">We're looking for passionate baristas and kitchen assistants. Send your CV to careers@smokeycoffee.uk</p>
+      <button class="mt-4 bg-white text-amber-800 px-6 py-2 rounded-full font-semibold hover:bg-amber-100 transition"><i class="fas fa-paper-plane mr-2"></i> View Openings</button>
+    </div>
+  </div>
+
+  <footer class="bg-gray-900 text-gray-300 py-8 text-center">
+    <i class="fas fa-mug-hot text-amber-400 mr-1"></i>
+    <span>© 2025 Smokey Coffee — Brewed with soul in London</span>
+    <div class="flex justify-center gap-5 mt-3 text-amber-400">
+      <i class="fab fa-instagram hover:text-white transition cursor-pointer"></i>
+      <i class="fab fa-x-twitter hover:text-white transition cursor-pointer"></i>
+      <i class="fab fa-facebook-f hover:text-white transition cursor-pointer"></i>
+    </div>
+  </footer>
+</body>
+</html>
