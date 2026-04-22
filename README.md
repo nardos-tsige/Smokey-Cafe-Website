@@ -33,5 +33,7 @@ Hover effects & smooth transitions
 🔗 Navigation
 Home → Menu → Our Story → Contact (all pages linked)
 
+Built this as a practice project to level up my HTML & CSS skills — working with Tailwind, responsive layouts, multi-page structure, and modern UI touches.
+
 Made with ☕
 
